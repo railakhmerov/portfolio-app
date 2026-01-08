@@ -1,14 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Hamburger from 'hamburger-react';
+import siteLogo from "../../assets/site-logo/favicon.svg"
 
 function Navigation() {
    const [isOpen, setIsOpen] = useState(false);
 
    return (
-      <nav className="relative z-50">
-         <div className="top-0 left-0 lg:hidden">
+      <nav className="py-1 relative z-50 border-b">
+         <div className="top-0 left-0 flex justify-between items-center lg:hidden">
             <Hamburger toggled={isOpen} toggle={setIsOpen} color="#c1c4f4" size={20} />
+            <Link to="/" onClick={() => setIsOpen(false)}>
+               <div className="logo px-3">
+                  <img src={siteLogo} alt="site-logo" height="50px" width="50px" loading="lazy"/>
+               </div>
+            </Link>
          </div>
 
          {isOpen && (
@@ -43,7 +49,7 @@ function Navigation() {
          <div className="hidden lg:h-screen lg:w-[400px] lg:flex lg:flex-col lg:bg-(--main-lilac)">
             <Link to="/" className="hover:text-gray-300 transition">Главная</Link>
             <Link to="/about" className="hover:text-gray-300 transition">Обо мне</Link>
-            <Link to="/projects" onClick={() => setIsOpen(false)}>Портфолио</Link>
+            <Link to="/projects" className="hover:text-gray-300 transition">Портфолио</Link>
             <Link to="/contacts" className="hover:text-gray-300 transition">Контакты</Link>
          </div>
       </nav>
