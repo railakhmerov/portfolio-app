@@ -1,0 +1,38 @@
+:root {
+   --main-purple: #c1c4f4;
+   --main-lilac: #8990f8;
+}
+
+*,
+html,
+body {
+   font-family: 'Neutra Text', sans-serif;                         
+}
+
+/* Анимация появления и исчезновения иконок */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Все иконки используют одну и ту же анимацию */
+.icon-animation img {
+  animation: fadeInOut 34s ease-in-out infinite;
+}
