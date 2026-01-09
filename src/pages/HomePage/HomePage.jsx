@@ -10,6 +10,10 @@ import viteIcon from "../../assets/notebook-icons/Vitejs.svg"
 import gitIcon from "../../assets/notebook-icons/Git.svg"
 import vscodeIcon from "../../assets/notebook-icons/Vscode.svg"
 import myImage from "../../assets/my-photo/image_1760972512988_0qjy8n.png"
+import projectsPageIcon from "../../assets/navigation-icons/AppsSolid.svg"
+import contactsPageIcon from "../../assets/navigation-icons/EnvelopeSolid.svg"
+import aboutMePageIcon from "../../assets/navigation-icons/Person.svg"
+import arrowRightIcon from "../../assets/ArrowRight.svg"
 
 function HomePage() {
    return (
@@ -49,16 +53,29 @@ function HomePage() {
                         lg:mb- lg:w-full lg:text-2xl">
                            <Link 
                               to="/projects"
-                              className="about-me__btn about-me__btn w-full py-4 px-8 flex justify-center items-center rounded-lg border border-(--main-purple)
+                              className="about-me__btn about-me__btn w-full py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)
                               sm:w-full
                               xl:py-6">
                               Портфолио
+                              <img
+                                 src={projectsPageIcon} 
+                                 alt="contacts-page-icon" 
+                                 height="32px" 
+                                 width="32px"
+                                 loading="lazy"/>
                            </Link>
                            <Link 
                               to="/contacts"
-                              className="about-me__btn py-4 px-8 flex justify-center items-center rounded-lg border border-(--main-purple)
+                              className="about-me__btn py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)
                               xl:py-6">
                               Контакты
+                              <img
+                                 src={contactsPageIcon} 
+                                 alt="contacts-page-icon" 
+                                 height="32px" 
+                                 width="32px" 
+                                 title="Контакты" 
+                                 loading="lazy"/>
                            </Link>
                         </div>
                         <div className="my-img w-full flex justify-center items-center
@@ -94,49 +111,49 @@ function HomePage() {
                                  <img 
                                     src={cssIcon}
                                     className="css-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '4s' }}
+                                    style={{ animationDelay: '2s' }}
                                     alt="CSS" 
                                     loading="lazy"
                                  />
                                  <img 
                                     src={jsIcon} 
                                     className="js-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '8s' }}
+                                    style={{ animationDelay: '4s' }}
                                     alt="JavaScript"
                                     loading="lazy"
                                  />
                                  <img 
                                     src={reactIcon} 
                                     className="react-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '12s' }}
+                                    style={{ animationDelay: '6s' }}
                                     alt="React"
                                     loading="lazy" 
                                  />
                                  <img 
                                     src={tailwindIcon} 
                                     className="tailwind-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '16s' }}
+                                    style={{ animationDelay: '8s' }}
                                     alt="Tailwind CSS"
                                     loading="lazy" 
                                  />
                                  <img 
                                     src={viteIcon} 
                                     className="vite-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '20s' }}
+                                    style={{ animationDelay: '10s' }}
                                     alt="Vite"
                                     loading="lazy" 
                                  />
                                  <img 
                                     src={gitIcon} 
                                     className="git-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '24s' }}
+                                    style={{ animationDelay: '12s' }}
                                     alt="Git"
                                     loading="lazy" 
                                  />
                                  <img
                                     src={vscodeIcon} 
                                     className="vsCode-icon absolute inset-0 w-full h-full object-contain opacity-0 animate-fadeInOut" 
-                                    style={{ animationDelay: '28s' }}
+                                    style={{ animationDelay: '14s' }}
                                     alt="VS Code"
                                     loading="lazy" 
                                  />
@@ -146,11 +163,18 @@ function HomePage() {
                         <div className="flex justify-center items-center">
                            <Link 
                               to="/about"
-                              className="about-me__btn w-[300px] py-4 px-8 flex justify-center items-center rounded-lg border border-(--main-purple)
+                              className="about-me__btn w-[300px] py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)
                               sm:text-xl
                               lg:text-2xl
                               xl:py-6">
                               Обо мне
+                              <img
+                                 className="md:h-6 md:w-6"
+                                 src={arrowRightIcon} 
+                                 alt="contacts-page-icon" 
+                                 height="16px" 
+                                 width="16px"
+                                 loading="lazy"/>
                            </Link>
                         </div>
                      </section>

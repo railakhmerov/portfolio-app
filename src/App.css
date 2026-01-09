@@ -34,5 +34,5 @@ body {
 
 /* Все иконки используют одну и ту же анимацию */
 .icon-animation img {
-  animation: fadeInOut 34s ease-in-out infinite;
+  animation: fadeInOut 16s ease-in-out infinite;
 }

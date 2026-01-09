@@ -6,7 +6,9 @@ import bigSiteLogo from "../../assets/site-logo/web-app-manifest-512x512.png"
 import homePageIcon from "../../assets/navigation-icons/House.svg"
 import aboutMePageIcon from "../../assets/navigation-icons/Person.svg"
 import skillsPageIcon from "../../assets/navigation-icons/Wrench.svg"
-import contactsPageIcon from "../../assets/navigation-icons/EnvelopeLetter.svg"
+import projectsPageIcon from "../../assets/navigation-icons/AppsSolid.svg"
+import experiencePageIcon from "../../assets/navigation-icons/BagSolid.svg"
+import contactsPageIcon from "../../assets/navigation-icons/EnvelopeSolid.svg"
 
 function Navigation() {
    const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +27,7 @@ function Navigation() {
 
          {isOpen && (
             <div className="relative">
-               <div className="h-full w-[270px] fixed top-0 left-0 bg-(--main-purple)">
+               <div className="h-full w-[250px] fixed top-0 left-0 bg-(--main-purple)">
                      <div className="p-5 w-max relative top-[25%] flex flex-col gap-8 text-2xl">
                         <Link to="/" onClick={() => setIsOpen(false)}>
                            Главная
@@ -35,6 +37,9 @@ function Navigation() {
                         </Link>
                         <Link to="/skills" onClick={() => setIsOpen(false)}>
                            Навыки
+                        </Link>
+                        <Link to="/experience" onClick={() => setIsOpen(false)}>
+                           Опыт
                         </Link>
                         <Link to="/projects" onClick={() => setIsOpen(false)}>
                            Портфолио
@@ -56,7 +61,7 @@ function Navigation() {
             </div>
          )}
          <div className="hidden
-         lg:flex lg:flex-col lg:gap-30 lg:justify-center lg:items-center">
+         lg:absolute lg:top-0 lg:left-0 lg:flex lg:flex-col lg:gap-30 lg:justify-center lg:items-center">
             <div>
                <Link to="/">
                   <div className="logo px-3 h-[110px] w-[120px] focus:border-none focus:outline-0">
@@ -67,19 +72,22 @@ function Navigation() {
             <div className="lg:w-[100px] lg:flex lg:flex-col lg:gap-8 lg:justify-center lg:items-center
             xl:gap-10">
                <Link to="/" className="hover:text-gray-300 transition">
-                  <img src={homePageIcon} alt="home-page-icon" height="32px" width="32px" title="Главная"/>
+                  <img src={homePageIcon} alt="home-page-icon" height="32px" width="32px" title="Главная" loading="lazy"/>
                </Link>
                <Link to="/about" className="hover:text-gray-300 transition">
-                  <img src={aboutMePageIcon} alt="about-me-page-icon" height="32px" width="32px" title="Обо мне" />
+                  <img src={aboutMePageIcon} alt="about-me-page-icon" height="32px" width="32px" title="Обо мне" loading="lazy"/>
                </Link>
                <Link to="/skills" className="hover:text-gray-300 transition">
-                  <img src={skillsPageIcon} alt="skills-page-icon" height="32px" width="32px" title="Навыки" />
+                  <img src={skillsPageIcon} alt="skills-page-icon" height="32px" width="32px" title="Навыки" loading="lazy"/>
+               </Link>
+               <Link to="/experience" className="hover:text-gray-300 transition">
+                  <img src={experiencePageIcon} alt="experience-page-icon" height="32px" width="32px" title="Опыт" loading="lazy"/>
                </Link>
                <Link to="/projects" className="hover:text-gray-300 transition">
-                  <img src={homePageIcon} alt="home-page-icon" height="32px" width="32px" title="Портфолио" />
+                  <img src={projectsPageIcon} alt="experience-page-icon" height="32px" width="32px" title="Портфолио" loading="lazy"/>
                </Link>
                <Link to="/contacts" className="hover:text-gray-300 transition">
-                  <img src={contactsPageIcon} alt="contacts-page-icon" height="32px" width="32px" title="Контакты" />
+                  <img src={contactsPageIcon} alt="contacts-page-icon" height="32px" width="32px" title="Контакты" loading="lazy"/>
                </Link>
             </div>
          </div>
