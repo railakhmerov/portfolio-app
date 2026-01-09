@@ -6,7 +6,7 @@ import bigSiteLogo from "../../assets/site-logo/web-app-manifest-512x512.png"
 import homePageIcon from "../../assets/navigation-icons/House.svg"
 import aboutMePageIcon from "../../assets/navigation-icons/Person.svg"
 import skillsPageIcon from "../../assets/navigation-icons/Wrench.svg"
-import projectsPageIcon from "../../assets/navigation-icons/AppsSolid.svg"
+import projectsPageIcon from "../../assets/navigation-icons/RoundWidgets.svg"
 import experiencePageIcon from "../../assets/navigation-icons/BagSolid.svg"
 import contactsPageIcon from "../../assets/navigation-icons/EnvelopeSolid.svg"
 

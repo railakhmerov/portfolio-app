@@ -10,9 +10,9 @@ import viteIcon from "../../assets/notebook-icons/Vitejs.svg"
 import gitIcon from "../../assets/notebook-icons/Git.svg"
 import vscodeIcon from "../../assets/notebook-icons/Vscode.svg"
 import myImage from "../../assets/my-photo/image_1760972512988_0qjy8n.png"
-import projectsPageIcon from "../../assets/navigation-icons/AppsSolid.svg"
+import experiencePageIcon from "../../assets/navigation-icons/BagSolid.svg"
+import projectsPageIcon from "../../assets/navigation-icons/RoundWidgets.svg"
 import contactsPageIcon from "../../assets/navigation-icons/EnvelopeSolid.svg"
-import aboutMePageIcon from "../../assets/navigation-icons/Person.svg"
 import arrowRightIcon from "../../assets/ArrowRight.svg"
 
 function HomePage() {
@@ -51,6 +51,19 @@ function HomePage() {
                         <div className="mb-28 flex flex-col gap-4 text-xl
                         sm:w-[45%]
                         lg:mb- lg:w-full lg:text-2xl">
+                           <Link 
+                              to="/experience"
+                              className="about-me__btn py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)
+                              xl:py-6">
+                              Опыт
+                              <img
+                                 src={experiencePageIcon} 
+                                 alt="contacts-page-icon" 
+                                 height="32px" 
+                                 width="32px" 
+                                 title="Контакты" 
+                                 loading="lazy"/>
+                           </Link>
                            <Link 
                               to="/projects"
                               className="about-me__btn about-me__btn w-full py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)

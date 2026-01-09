@@ -1,12 +1,11 @@
 :root {
-   --main-purple: #c1c4f4;
-   --main-lilac: #8990f8;
+  --main-purple: #c1c4f4;
+  --main-turquoise: #2FD0C8;
 }
-
 *,
 html,
 body {
-   font-family: 'Neutra Text', sans-serif;                         
+  font-family: 'Neutra Text', sans-serif;                         
 }
 
 /* Анимация появления и исчезновения иконок */
