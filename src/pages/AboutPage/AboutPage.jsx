@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
 import experienceIcon from "../../assets/about-me-icons/Bag.svg"
 import codeIcon from "../../assets/about-me-icons/Code.svg"
@@ -7,6 +8,10 @@ import sportIcon from "../../assets/about-me-icons/Dumbbell.svg"
 import cameraIcon from "../../assets/about-me-icons/CameraFill.svg"
 import teaIcon from "../../assets/about-me-icons/TeacupWithoutHandle.svg"
 import myImage from "../../assets/my-photo/photo_2026-01-10_16-06-42.jpg"
+import githubSocialLink from "../../assets/social-icons/Github.svg"
+import telegramSocialLink from "../../assets/social-icons/Telegram.svg"
+import arrowLeftIcon from "../../assets/ArrowLeft.svg"
+import arrowRightIcon from "../../assets/ArrowRight.svg"
 
 function AboutPage() {
    return (
@@ -17,16 +22,18 @@ function AboutPage() {
          lg:mb-0 lg:max-h-full lg:w-[10%] lg:flex">
             <Navigation />
          </header>
-         <main>
+         <main className="min-h-screen scroll-auto
+         lg:w-[90%]">
             {/* <div className="container px-4 min-w-full sm:w-[450px] my-0 mx-auto">
             </div> */}
-               <div className="sides
+               <div className="sides min-h-full
                lg:flex lg:justify-between">
-                  <div className="left-side__wrapper">
+                  <div className="left-side__wrapper w-full
+                  lg:w-1/2">
                      <div className="container px-4 min-w-full my-0 mx-auto
                      sm:w-[450px]">
-                        <div className="left-sides mb-40
-                        lg:py-14 lg:px-5 lg:mb-0 lg:w-[50%]"> 
+                        <div className="left-sides mb-28
+                        lg:py-14 lg:px-5 lg:mb-0 lg:w-full"> 
                            <div className="about-me__title mb-5">
                               <h2 className="text-3xl font-bold text-(--main-purple)
                               sm:text-4xl
@@ -35,7 +42,8 @@ function AboutPage() {
                               </h2>
                            </div> 
                            <div className="about-me__text mb-12
-                           sm:mb-18">
+                           sm:mb-18
+                           xl:mb-24">
                               <p className="text-lg font-bold max-w-[750px]
                               sm:text-xl
                               lg:text-2xl">
@@ -113,25 +121,81 @@ function AboutPage() {
                         </div>
                      </div>
                   </div>
-                  <div className="right-side__wrapper bg-(--main-cyan)">
+                  <div className="right-side__wrapper min-h-full bg-(--main-cyan)
+                  lg:max-w-full lg:w-1/2">
                      <div className="container px-4 min-w-full my-0 mx-auto
                      sm:w-[450px]">
-                        <div className="right-sides
-                        lg:px-8 lg:w-[50%] lg:flex lg:flex-col lg:justify-between lg:items-center">
-                           <div className="social-links">
+                        <div className="right-sides w-full relative
+                        lg:px-8 lg:flex lg:flex-col lg:justify-between lg:items-center">
+                           <div className="social-links pt-28 pb-10 flex flex-col gap-5
+                           sm:pb-12">
                               <div className="flex justify-center items-center">
                                  <img
-                                    className="w-80 h-80 rounded-full object-cover border-3 border-(--main-purple)
-                                    sm:w-32 sm:h-32" 
+                                    className="w-80 h-80 rounded-full object-cover border-10 border-(--main-white)
+                                    sm:h-100 sm:w-100" 
                                     src={myImage}
                                     alt="my-img" />
                               </div>
-                              <ul>
-                                 <li></li>
-                              </ul>
+                              <div className="w-full flex justify-center items-center">
+                                 <ul className="grid grid-cols-2 gap-3">
+                                    <li className="h-15 w-15 flex justify-center items-center rounded-full bg-(--main-white)
+                                    sm:h-18 sm:w-18">
+                                       <a href="https://github.com/railakhmerov" target="_blank" rel="noopener noreferrer">
+                                          <img
+                                             className="sm:h-10 sm:w-10" 
+                                             src={githubSocialLink}
+                                             width="32px"
+                                             height="32px"
+                                             alt="github-icon" 
+                                             title="GitHub"/>
+                                       </a>
+                                    </li>
+                                    <li className="h-15 w-15 flex justify-center items-center rounded-full bg-(--main-white)
+                                    sm:h-18 sm:w-18">
+                                       <a href="https://t.me/Akhmer0v" target="_blank" rel="noopener noreferrer">
+                                          <img 
+                                             className="sm:h-10 sm:w-10"
+                                             src={telegramSocialLink} 
+                                             width="32px"
+                                             height="32px"
+                                             alt="telegram-icon" 
+                                             title="Telegram"/>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
                            </div>
-
-                           <footer>
+                           <div className="pb-28 flex flex-col gap-2 justify-center items-center">
+                              <Link 
+                                 to="/skills"
+                                 className="skills__btn w-[300px] py-4 px-8 flex gap-2 justify-center items-center rounded-lg font-semibold bg-(--main-black)
+                                 sm:text-xl
+                                 lg:text-2xl
+                                 xl:py-6">
+                                 Навыки
+                                 <img 
+                                    src={arrowRightIcon}
+                                    alt="arrows-icon"
+                                    height="18px" 
+                                    width="18px"
+                                    loading="lazy" />
+                              </Link>
+                              <Link
+                                 to="/"
+                                 className="home__btn w-[300px] py-4 px-8 flex gap-2 justify-center items-center rounded-lg font-semibold bg-(--main-black)
+                                 sm:text-xl
+                                 lg:text-2xl
+                                 xl:py-6">
+                                 <img 
+                                    src={arrowLeftIcon}
+                                    alt="arrows-icon"
+                                    height="18px" 
+                                    width="18px"
+                                    loading="lazy" />
+                                 Главная
+                              </Link>
+                           </div>
+                           <footer className="w-full absolute bottom-0 left-0 font-semibold">
                               <div className="py-8 px-5 w-full relative bottom-0 left-1/2 translate -translate-x-1/2
                               sm:py-10
                               lg:bottom-0">

@@ -24,16 +24,18 @@ function HomePage() {
          lg:mb-0 lg:max-h-full lg:w-[10%] lg:flex">
             <Navigation />
          </header>
-         <main className="lg:w-[90%] scroll-auto">
+         <main className="lg:w-[90%] scroll-auto min-h-screen">
             {/* <div className="container px-4 min-w-full sm:w-[450px] my-0 mx-auto">
             </div> */}
-            <div className="sides 
+            <div className="sides min-h-full
             lg:flex lg:justify-between">
-               <div className="left-sides__wrapper">
+               <div className="left-sides__wrapper 
+               lg:w-[50%]">
                   <div className="container px-4 min-w-full my-0 mx-auto
-                  sm:w-[450px]">
+                  sm:w-[450px]
+                  lg:w-full">
                      <div className="left-sides mb-28
-                     lg:py-14 lg:px-5 lg:mb-0 lg:w-[50%]">
+                     lg:py-14 lg:px-5 lg:mb-0">
                         <section className="home-page__about-me mb-22
                         sm:mb-40
                         lg:mb-20">
@@ -50,7 +52,7 @@ function HomePage() {
                         <div className="w-full 
                         sm:flex sm:gap-14
                         lg:flex-col lg:gap-0">
-                           <div className="mb-28 flex flex-col gap-4 text-xl
+                           <div className="mb-28 flex flex-col gap-4 text-xl font-semibold
                            sm:w-[45%]
                            lg:mb- lg:w-full lg:text-2xl">
                               <Link 
@@ -109,12 +111,13 @@ function HomePage() {
                      </div>
                   </div>
                </div>
-               <div className="right-sides__wrapper bg-(--main-cyan)">
+               <div className="right-sides__wrapper relative bg-(--main-cyan)
+               lg:w-[45%]">
                   <div className="container px-4 min-w-full my-0 mx-auto
                   sm:w-[450px]">
-                     <div className="right-sides py-28
-                     lg:px-8 lg:w-[50%] lg:flex lg:flex-col lg:justify-between lg:items-center">
-                        <section className="banner mb-28
+                     <div className="right-sides pt-28 pb-20
+                     lg:px-8 lg:flex lg:flex-col lg:items-center">
+                        <section className="banner mb-10
                         lg:py-40 lg:mb-0">
                            <div className="animation relative flex justify-center animate-fadeInOut mb-8">
                               <img src={macbookImage} alt="macbook" width="850px"/>
@@ -182,7 +185,7 @@ function HomePage() {
                            <div className="flex justify-center items-center">
                               <Link 
                                  to="/about"
-                                 className="about-me__btn w-[300px] py-4 px-8 flex gap-2 justify-center items-center rounded-lg border border-(--main-purple)
+                                 className="about-me__btn w-[300px] py-4 px-8 flex gap-2 justify-center items-center rounded-lg font-semibold bg-(--main-black)
                                  sm:text-xl
                                  lg:text-2xl
                                  xl:py-6">
@@ -191,13 +194,13 @@ function HomePage() {
                                     className="md:h-6 md:w-6"
                                     src={arrowRightIcon} 
                                     alt="contacts-page-icon" 
-                                    height="16px" 
-                                    width="16px"
+                                    height="18px" 
+                                    width="18px"
                                     loading="lazy"/>
                               </Link>
                            </div>
                         </section>
-                        <footer>
+                        <footer className="w-full absolute bottom-0 left-0 font-semibold">
                            <div className="py-8 px-5 w-full relative bottom-0 left-1/2 translate -translate-x-1/2
                            sm:py-10
                            lg:bottom-0">
