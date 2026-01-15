@@ -19,7 +19,6 @@ function HomePage() {
    return (
       <div className="home-page w-full 
       lg:flex">
-         {/* навигация */}
          <header className="navigation mb-10
          lg:mb-0 lg:max-h-full lg:w-[10%] lg:flex">
             <Navigation />
