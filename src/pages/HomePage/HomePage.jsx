@@ -114,7 +114,7 @@ function HomePage() {
                lg:w-[45%]">
                   <div className="container px-4 min-w-full my-0 mx-auto
                   sm:w-[450px]">
-                     <div className="right-sides pt-28 pb-20
+                     <div className="right-sides pt-28 pb-28
                      lg:px-8 lg:flex lg:flex-col lg:items-center">
                         <section className="banner mb-10
                         lg:py-40 lg:mb-0">

@@ -126,7 +126,7 @@ function AboutPage() {
                      sm:w-[450px]">
                         <div className="right-sides w-full relative
                         lg:px-8 lg:flex lg:flex-col lg:justify-between lg:items-center">
-                           <div className="social-links pt-28 pb-10 flex flex-col gap-5
+                           <div className="social-links pt-28 mb-10 flex flex-col gap-5
                            sm:pb-12">
                               <div className="flex justify-center items-center">
                                  <img
