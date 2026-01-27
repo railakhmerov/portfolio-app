@@ -14,6 +14,7 @@ import device from "../../assets/skills-accordions-icons/Devices2.svg"
 import todolist from "../../assets/skills-accordions-icons/TodoList.svg"
 import chatGPT from "../../assets/skills-accordions-icons/OpenaiChatgpt.svg"
 import youtube from "../../assets/skills-accordions-icons/YoutubeIcon.svg"
+import yandexMusic from "../../assets/skills-accordions-icons/yandex-music.svg"
 import git from "../../assets/skills-accordions-icons/Git.svg"
 import yarn from "../../assets/skills-accordions-icons/YarnFill.svg"
 import npm from "../../assets/skills-accordions-icons/NpmWordmark.svg"
@@ -123,12 +124,12 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={js}
-                                    className="w-28 cursor-pointer title:bg-red-500"
+                                    className="w-28 h-28 cursor-pointer title:bg-red-500"
                                     title="JS"
                                     alt="icon" />
                                  <img 
                                     src={react}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="React"
                                     alt="icon" />
 
@@ -139,12 +140,12 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={react}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="React"
                                     alt="icon" />
                                  <img 
                                     src={html} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="HTML"
                                     alt="" />
                               </AccordionItem>
@@ -154,22 +155,22 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={tailwind}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="Tailwind CSS"
                                     alt="icon" />
                                  <img 
                                     src={scss} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="SCSS"
                                     alt="icon" />
                                  <img 
                                     src={css} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="CSS"
                                     alt="icon" />
                                  <img 
                                     src={bem} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="BEM"
                                     alt="icon" />
                               </AccordionItem>
@@ -179,22 +180,22 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={git}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="Git"
                                     alt="icon" />                                 
                                  <img 
                                     src={yarn}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="yarn"
                                     alt="icon" />                                 
                                  <img 
                                     src={npm}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="npm"
                                     alt="icon" />                                 
                                  <img 
                                     src={vite}
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="Vite"
                                     alt="icon" />                                 
                               </AccordionItem>
@@ -204,13 +205,18 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={chatGPT} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="Chat GPT"
                                     alt="icon" />
                                  <img 
                                     src={youtube} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="YouTube"
+                                    alt="icon" />
+                                 <img 
+                                    src={yandexMusic} 
+                                    className="w-28 h-28 cursor-pointer"
+                                    title="Yandex Music"
                                     alt="icon" />
                               </AccordionItem>
                               <AccordionItem
@@ -219,18 +225,19 @@ function SkillsPage() {
                               >
                                  <img 
                                     src={vscode} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="VS Code"
                                     alt="icon" />
                                  <img 
                                     src={figma} 
-                                    className="w-28 cursor-pointer"
+                                    className="w-28 h-28 cursor-pointer"
                                     title="Figma"
                                     alt="icon" />
                               </AccordionItem>
                            </ul>
                         </div>
-                        <footer className="w-full absolute bottom-0 left-0 font-semibold">
+                        <footer className="w-full fixed bottom-0 left-0 font-semibold
+                        lg:absolute">
                            <div className="py-8 px-5 w-full relative bottom-0 left-1/2 translate -translate-x-1/2
                            sm:py-10
                            lg:bottom-0">

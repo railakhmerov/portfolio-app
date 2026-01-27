@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='App h-full min-h-screen text-[aliceblue] bg-[#1d1d1d] scroll-smooth'>
+    <div className='App min-h-screen w-full text-[aliceblue] bg-[#1d1d1d] scroll-smooth'>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

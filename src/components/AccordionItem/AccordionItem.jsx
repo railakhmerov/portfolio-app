@@ -20,7 +20,7 @@ function AccordionItem({ accordionItemTitle, children, itsFirstAccordion }) {
                />
             </div>
             {!isOpen && (
-               <div className="accordion__content mt-10 h-max grid grid-cols-2 justify-items-center
+               <div className="accordion__content mt-10 h-max grid grid-cols-2 justify-items-center place-items-center
                mm:flex mm:flex-wrap mm:gap-1.5
                sm:gap-8
                lg:grid lg:grid-cols-2 lg:justify-items-center

@@ -23,8 +23,6 @@ function AboutPage() {
          </header>
          <main className="min-h-screen scroll-auto
          lg:w-[90%]">
-            {/* <div className="container px-4 min-w-full sm:w-[450px] my-0 mx-auto">
-            </div> */}
                <div className="sides min-h-full
                lg:flex lg:justify-between">
                   <div className="left-side__wrapper w-full
@@ -141,7 +139,7 @@ function AboutPage() {
                                     sm:h-18 sm:w-18">
                                        <a href="https://github.com/railakhmerov" target="_blank" rel="noopener noreferrer">
                                           <img
-                                             className="sm:h-10 sm:w-10" 
+                                             className="sm:h-10 sm:w-10 animate-bounce" 
                                              src={githubSocialLink}
                                              width="32px"
                                              height="32px"
@@ -153,7 +151,7 @@ function AboutPage() {
                                     sm:h-18 sm:w-18">
                                        <a href="https://t.me/Akhmer0v" target="_blank" rel="noopener noreferrer">
                                           <img 
-                                             className="sm:h-10 sm:w-10"
+                                             className="sm:h-10 sm:w-10 animate-bounce"
                                              src={telegramSocialLink} 
                                              width="32px"
                                              height="32px"
