@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
+import HomeStartText from "../../components/HomeStartText/HomeStartText";
+import Footer from "../../components/Footer/Footer";
 import macbookImage from "../../assets/mackbook.png"
 import htmlIcon from "../../assets/notebook-icons/Html5.svg"
 import cssIcon from "../../assets/notebook-icons/Css3.svg"
@@ -35,18 +37,7 @@ function HomePage() {
                   lg:w-full">
                      <div className="left-sides mb-28
                      lg:py-14 lg:px-5 lg:mb-0">
-                        <section className="home-page__about-me mb-22
-                        sm:mb-40
-                        lg:mb-20">
-                           <div className="home-page__about-me_text">
-                              <h2 className="mb-4 text-3xl font-bold text-(--main-purple)
-                              sm:text-4xl
-                              lg:text-5xl">
-                                 Я Раиль - Frontend developer
-                              </h2>
-                              <p className="text-lg font-bold sm:text-xl lg:text-2xl">Люблю чай, красивые фотографии и программирование</p>
-                           </div>
-                        </section>
+                        <HomeStartText />
                         {/* общий блок с ссылками и фото */}
                         <div className="w-full 
                         sm:flex sm:gap-14
@@ -199,13 +190,7 @@ function HomePage() {
                               </Link>
                            </div>
                         </section>
-                        <footer className="w-full absolute bottom-0 left-0 font-semibold">
-                           <div className="py-8 px-5 w-full relative bottom-0 left-1/2 translate -translate-x-1/2
-                           sm:py-10
-                           lg:bottom-0">
-                              <p className="text-center sm:text-lg lg:text-xl">© 2025, Ахмеров Раиль</p>
-                           </div>
-                        </footer>
+                        <Footer />
                      </div>
                   </div>
                </div>

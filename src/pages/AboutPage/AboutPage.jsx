@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
+import AboutStartText from "../../components/AboutStartText/AboutStartText";
+import Footer from "../../components/Footer/Footer";
 import experienceIcon from "../../assets/about-me-icons/Bag.svg"
 import codeIcon from "../../assets/about-me-icons/Code.svg"
 import infinityIcon from "../../assets/about-me-icons/Infinity.svg"
@@ -31,23 +33,7 @@ function AboutPage() {
                      sm:w-[450px]">
                         <div className="left-sides mb-28
                         lg:py-14 lg:px-5 lg:mb-0 lg:w-full"> 
-                           <div className="about-me__title mb-5">
-                              <h2 className="text-3xl font-bold text-(--main-purple)
-                              sm:text-4xl
-                              lg:text-5x">
-                                 Обо мне
-                              </h2>
-                           </div> 
-                           <div className="about-me__text mb-12
-                           sm:mb-18
-                           xl:mb-24">
-                              <p className="text-lg font-bold max-w-[750px]
-                              sm:text-xl
-                              lg:text-2xl">
-                                 Я программист занимаюсь <span className="text-(--main-cyan)">фронтенд-разработкой</span>. 
-                                 Создаю проекты и воплощаю в жизнь UI/UX идеи.
-                              </p>
-                           </div>
+                           <AboutStartText />
                            <ul className="about-me__info max-w-[850px] m-auto grid grid-cols-1 gap-y-8 gap-x-4
                            mm:grid-cols-2
                            sm:text-xl">
@@ -192,13 +178,7 @@ function AboutPage() {
                                  Главная
                               </Link>
                            </div>
-                           <footer className="w-full absolute bottom-0 left-0 font-semibold">
-                              <div className="py-8 px-5 w-full relative bottom-0 left-1/2 translate -translate-x-1/2
-                              sm:py-10
-                              lg:bottom-0">
-                                 <p className="text-center sm:text-lg lg:text-xl">© 2025, Ахмеров Раиль</p>
-                              </div>
-                           </footer>
+                           <Footer />
                         </div>
                      </div>
                   </div>
